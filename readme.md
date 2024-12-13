@@ -2,9 +2,11 @@
 
 <img alt="C" src="assets/C_Programming_Language.svg" width="120px"/>
 
-# C-Learning
+# <samp>C-Learning</samp>
 
-##  <samp>Welcome to the **C-Learning** repository! This is my personal journey of learning the C programming language. It contains my practice programs, experiments, and notes as I explore C concepts and improve my skills.</samp>
+![GitHub Repo stars](https://img.shields.io/github/stars/Gurjaka/C-Learning?style=for-the-badge&labelColor=2e3440&color=5e81ac) ![GitHub last commit](https://img.shields.io/github/last-commit/Gurjaka/C-Learning?style=for-the-badge&labelColor=2e3440&color=5e81ac) ![GitHub repo size](https://img.shields.io/github/repo-size/Gurjaka/C-Learning?style=for-the-badge&labelColor=2e3440&color=5e81ac)
+
+## <samp>Welcome to the **C-Learning** repository! This is my personal journey of learning the C programming language. It contains my practice programs, experiments, and notes as I explore C concepts and improve my skills.</samp>
 
 </div>
 
@@ -56,6 +58,8 @@ cd C-Learning
 ### Compile and Run a Program
 
 Navigate to the directory containing the program you want to run and compile it using:
+
+> Note: most programs are already compiled, and you only have to run them, this is for case when you've added your own program
 
 ```bash
 gcc program_name.c -o ./compiled/program_name
