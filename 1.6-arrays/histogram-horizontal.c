@@ -12,8 +12,8 @@ int main() {
     // check end of the word
     if (c == ' ' || c == '\n' || c == '\t') {
       if (current_len > 0 && current_len < MAX_WORD_LENGTH) {
-	wlen[current_len]++;
-	current_len = 0;
+        wlen[current_len]++;
+        current_len = 0;
       }
     } else {
       current_len++;
@@ -25,11 +25,11 @@ int main() {
     if (wlen[i] != 0) {
       printf("%d | ", i);
       for (int j = 0; j < wlen[i]; j++) {
-	printf("*");
+        printf("*");
       }
       printf("\n");
     }
   }
-  
+
   return 0;
 }

@@ -6,13 +6,19 @@ int main() {
 
   while ((c = getchar()) != EOF) {
     switch (c) {
-      case '\n': ++nl; break;
-      case ' ': ++bl; break;
-      case '\t': ++tab; break;
+    case '\n':
+      ++nl;
+      break;
+    case ' ':
+      ++bl;
+      break;
+    case '\t':
+      ++tab;
+      break;
     }
   }
 
   printf("Blank: %d\nTabs: %d\nNewlines: %d", bl, tab, nl);
-  
+
   return 0;
 }

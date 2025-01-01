@@ -1,9 +1,8 @@
 #include <stdio.h>
 
-float cels_to_fahr(float cels)
-{
-    float fahr = cels * 1.8 + 32;
-    return fahr;
+float cels_to_fahr(float cels) {
+  float fahr = cels * 1.8 + 32;
+  return fahr;
 }
 
 int main() {

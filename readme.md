@@ -62,14 +62,14 @@ Navigate to the directory containing the program you want to run and compile it 
 > Note: most programs are already compiled, and you only have to run them, this is for case when you've added your own program
 
 ```bash
-gcc program_name.c -o ./compiled/program_name
+cc program_name.c -o ./compiled/program_name
 ./compiled/program_name
 ```
 
 For example:
 
 ```bash
-gcc hello_world.c -o ./compiled/hello_world
+cc hello_world.c -o ./compiled/hello_world
 ./compiled/hello_world
 ```
 ---
@@ -81,17 +81,20 @@ The directory structure of this repository is as follows:
 ```
 C-Learning/
 │
-├── 1.0-non-book-related/            # Folder for non-book related C programming content
-├── 1.1-getting-started/             # Folder for getting started with C programming
-├── 1.2-variables-arithmetic-expressions/  # Folder for variables and arithmetic expressions
-├── 1.3-for-statement/              # Folder for examples using for statements
-├── 1.4-symbolic-constants/         # Folder for symbolic constants
-├── 1.5-character-input-output/     # Folder for character I/O operations
-├── 1.6-arrays/                     # Folder for array examples
-├── 1.7-functions/                  # Folder for function definitions and examples
-├── assets/                          # Folder for additional assets (e.g., images, data files)
-├── 'C Programming Language - 2nd Edition (OCR).pdf'  # PDF of the C programming language book (2nd edition)
-├── readme.md                        # The README file for project documentation
+├── 1.0-non-book-related/
+├── 1.1-getting-started/
+├── 1.2-variables-arithmetic-expressions/
+├── 1.3-for-statement/
+├── 1.4-symbolic-constants/
+├── 1.5-character-input-output/
+├── 1.6-arrays/
+├── 1.7-functions/
+├── 1.8-arguments-call-by-value/
+├── 1.9-character-arrays/
+├── assets/
+├── 'C Programming Language - 2nd Edition (OCR).pdf'
+├── 'C-programming-a-modern-approach.pdf'
+├── readme.md
 ```
 
 ---
