@@ -60,8 +60,6 @@ cd C-Programming-Language
 
 Navigate to the directory containing the program you want to run and compile it using:
 
-> Note: most programs are already compiled, and you only have to run them, this is for case when you've added your own program
-
 ```bash
 cc program_name.c -o ./compiled/program_name
 ./compiled/program_name
@@ -81,20 +79,21 @@ The directory structure of this repository is as follows:
 
 ```
 C-Programming-Language/
-├── 1.0-non-book-related
-├── 1.1-getting-started
-├── 1.2-variables-arithmetic-expressions
-├── 1.3-for-statement
-├── 1.5-character-input-output
-├── 1.6-arrays
-├── 1.7-functions
-├── 1.8-arguments-call-by-value
-├── 1.9-character-arrays
-├── 1.10-external-variables-and-scope
 ├── assets
 ├── 'C Programming Language - 2nd Edition (OCR).pdf'
 ├── LICENSE
 ├── readme.md
+├── src
+│   ├── 1.0-non-book-related
+│   ├── 1.1-getting-started
+│   ├── 1.2-variables-arithmetic-expressions
+│   ├── 1.3-for-statement
+│   ├── 1.5-character-input-output
+│   ├── 1.6-arrays
+│   ├── 1.7-functions
+│   ├── 1.8-arguments-call-by-value
+│   ├── 1.9-character-arrays
+│   ├── 1.10-external-variables-and-scope
 ├── tasks
 │   ├── Chapter-1:Tutorial-Introduction
 │   ├── Chapter-2:Types-Operators-Expressions

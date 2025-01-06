@@ -20,7 +20,7 @@ if [ $? != 0 ]; then
   tmux resize-pane -R 40 # Shrink the right pane, make left larger
 
   # In the left pane (CODE), run neovim or another editor
-  tmux send-keys -t $SESSION_NAME:0.0 'nvim' C-m  # Open neovim in CODE
+  tmux send-keys -t $SESSION_NAME:0.0 'cd src; nvim' C-m  # Open neovim in CODE
 
   # In the right pane, split it into two vertical panes (TASKS and empty space)
   tmux split-window -v -t $SESSION_NAME:0.1
