@@ -38,8 +38,6 @@ void reverse(char string[]) {
 
   --i;
 
-  char reversed[i + 1];
-
   while (i > j) {
     char temp = string[i];
     string[i] = string[j];

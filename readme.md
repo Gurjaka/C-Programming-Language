@@ -2,11 +2,11 @@
 
 <img alt="C" src="assets/C_Programming_Language.svg" width="120px"/>
 
-# <samp>C-Learning</samp>
+# <samp>C-Programming-Language</samp>
 
 ![GitHub Repo stars](https://img.shields.io/github/stars/Gurjaka/C-Learning?style=for-the-badge&labelColor=2e3440&color=5e81ac) ![GitHub last commit](https://img.shields.io/github/last-commit/Gurjaka/C-Learning?style=for-the-badge&labelColor=2e3440&color=5e81ac) ![GitHub repo size](https://img.shields.io/github/repo-size/Gurjaka/C-Learning?style=for-the-badge&labelColor=2e3440&color=5e81ac)
 
-## <samp>Welcome to the **C-Learning** repository! This is my personal journey of learning the C programming language. It contains my practice programs, experiments, and notes as I explore C concepts and improve my skills.</samp>
+## <samp>Welcome to the **C-Programming-Language** repository! This is my personal journey of learning the C. It contains my practice programs, experiments, and notes as I explore C concepts and improve my skills.</samp>
 
 </div>
 
@@ -16,6 +16,7 @@
 - 🤔 [Why This Repository](#-why-this-repository)
 - 🚀 [Getting Started](#-getting-started)
 - 🗂️ [Directory Structure](#%EF%B8%8F-directory-structure)
+- 🖥️ [Tmux](#tmux)
 - 🤝 [Contributing](#-contributing)
 - 📜 [License](#-license)
 
@@ -51,8 +52,8 @@ If you're here to follow along or try out the programs, you'll need:
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/Gurjaka/C-Learning.git
-cd C-Learning
+git clone https://github.com/Gurjaka/C-Programming-Language.git
+cd C-Programming-Language
 ```
 
 ### Compile and Run a Program
@@ -79,25 +80,56 @@ cc hello_world.c -o ./compiled/hello_world
 The directory structure of this repository is as follows:
 
 ```
-C-Learning/
-│
-├── 1.0-non-book-related/
-├── 1.1-getting-started/
-├── 1.2-variables-arithmetic-expressions/
-├── 1.3-for-statement/
-├── 1.4-symbolic-constants/
-├── 1.5-character-input-output/
-├── 1.6-arrays/
-├── 1.7-functions/
-├── 1.8-arguments-call-by-value/
-├── 1.9-character-arrays/
-├── assets/
+C-Programming-Language/
+├── 1.0-non-book-related
+├── 1.1-getting-started
+├── 1.2-variables-arithmetic-expressions
+├── 1.3-for-statement
+├── 1.5-character-input-output
+├── 1.6-arrays
+├── 1.7-functions
+├── 1.8-arguments-call-by-value
+├── 1.9-character-arrays
+├── 1.10-external-variables-and-scope
+├── assets
 ├── 'C Programming Language - 2nd Edition (OCR).pdf'
-├── 'C-programming-a-modern-approach.pdf'
+├── LICENSE
 ├── readme.md
+├── tasks
+│   ├── Chapter-1:Tutorial-Introduction
+│   ├── Chapter-2:Types-Operators-Expressions
+│   ├── Chapter-3:Control-Flow
+│   ├── Chapter-4:Functions-Program-Structure
+│   ├── Chapter-5:Pointers-Arrays
+│   ├── Chapter-6:Structures
+│   ├── Chapter-7:Input-Output
+│   └── Chapter-8:The-UNIX-System-Interface
+└── tmux.sh
 ```
 
+> Note: Each chapter includes its exercises and compiled programs.
+> The "Tasks" directory contains Markdown files with descriptions for the exercises.
+
 ---
+
+## 🖥️ Tmux
+
+The tmux.sh script sets up a custom tmux session for an organized development environment. It creates a tmux session named "C", splits the terminal window into multiple panes for different tasks, and launches relevant programs in each pane. This setup allows the user to code, track tasks, compile and run a programs simultaneously in a single terminal session.
+
+Layout:
+```bash
+ _________________________________
+|                     |   TASKS   |
+|                     |   NVIM    |
+|                     |___________|
+|        CODE         |           |
+|        NVIM         |           |
+|                     |    GCC    |
+|                     |           |
+|_____________________|___________|
+```
+
+--- 
 
 ## 🤝 Contributing
 
