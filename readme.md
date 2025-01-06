@@ -42,6 +42,13 @@ This repository is primarily for my learning and self-improvement. By sharing my
 
 ---
 
+
+## 📚 Book Reference
+
+The book I will be following and referencing throughout this repository is the [C Programming Language - 2nd Edition (OCR)](https://seriouscomputerist.atariverse.com/media/pdf/book/C%20Programming%20Language%20-%202nd%20Edition%20(OCR).pdf). This book will serve as the primary guide for the C programming concepts, examples, and exercises found in this repository.
+
+---
+
 ## 🚀 Getting Started
 
 If you're here to follow along or try out the programs, you'll need:
@@ -71,6 +78,7 @@ For example:
 cc hello_world.c -o ./compiled/hello_world
 ./compiled/hello_world
 ```
+
 ---
 
 ## 🗂️ Directory Structure
@@ -80,7 +88,6 @@ The directory structure of this repository is as follows:
 ```
 C-Programming-Language/
 ├── assets
-├── 'C Programming Language - 2nd Edition (OCR).pdf'
 ├── LICENSE
 ├── readme.md
 ├── src
