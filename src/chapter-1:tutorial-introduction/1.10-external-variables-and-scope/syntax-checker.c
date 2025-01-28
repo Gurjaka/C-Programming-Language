@@ -91,7 +91,7 @@ int main(void) {
     return EXIT_FAILURE;
   }
 
-  printf("No syntax errors found");
+  printf("No syntax errors found\n");
   return EXIT_SUCCESS;
 }
 
