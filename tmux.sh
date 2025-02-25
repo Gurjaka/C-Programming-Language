@@ -1,6 +1,6 @@
 #! /usr/bin/env sh
 
-SESSION_NAME="C"
+SESSION_NAME="C-Learning"
 
 # Check if the session already exists
 tmux has-session -t $SESSION_NAME
