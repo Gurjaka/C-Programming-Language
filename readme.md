@@ -125,13 +125,13 @@ The tmux.sh script sets up a custom tmux session for an organized development en
 Layout:
 ```bash
  _________________________________
-|                     |   TASKS   |
-|                     |   NVIM    |
-|                     |___________|
-|        CODE         |           |
-|        NVIM         |           |
-|                     |    GCC    |
 |                     |           |
+|         CODE        |           |
+|         NVIM        |   TASKS   |
+|                     |   NVIM    |
+|_____________________|           |
+|                     |           |
+|         GCC         |           |
 |_____________________|___________|
 ```
 

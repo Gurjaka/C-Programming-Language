@@ -1,45 +1,39 @@
 #! /usr/bin/env sh
 
-SESSION_NAME="C-Learning"
+SESSION_NAME="C"
 
-# Check if the session already exists
 tmux has-session -t $SESSION_NAME
 
-# If the session doesn't exist, create it
 if [ $? != 0 ]; then
-  # Start a new session
-  tmux new-session -d -s $SESSION_NAME
+	export C_DIRECTORY=$(find ~/ -type d -name C-Programming-Language -print -quit)
 
-  # Rename the first window to "Main Window"
-  tmux rename-window -t $SESSION_NAME:0 'Main Window'
+	tmux new-session -d -s $SESSION_NAME
 
-  # Split the window into two vertical panes: left (CODE) and right (TASKS + empty space)
-  tmux split-window -h -t $SESSION_NAME:0
+	tmux rename-window -t $SESSION_NAME:0 'Main Window'
 
-  # Resize the left pane (CODE) to take up approximately 40% of the screen
-  tmux resize-pane -R 40 # Shrink the right pane, make left larger
+	tmux send-keys -t $SESSION_NAME:0.0 'cd $C_DIRECTORY/src' C-m
 
-  # In the left pane (CODE), run neovim or another editor
-  tmux send-keys -t $SESSION_NAME:0.0 'cd src; nvim' C-m  # Open neovim in CODE
+	tmux split-window -h -t $SESSION_NAME:0
 
-  # In the right pane, split it into two vertical panes (TASKS and empty space)
-  tmux split-window -v -t $SESSION_NAME:0.1
+	tmux resize-pane -R 40 # Shrink the right pane, make left larger
 
-  # Resize the bottom right pane to take up more space
-  tmux resize-pane -U 10 # Expand the bottom pane
+	tmux send-keys -t $SESSION_NAME:0.0 'nvim' C-m  # Open neovim in CODE
 
-  # Change to working directory for the first window (CODE)
-  tmux send-keys -t $SESSION_NAME:0.1 'cd tasks' C-m
+	tmux resize-pane -U 10 # Expand the bottom pane
 
-  # In the top-right pane (TASKS), open neovim
-  tmux send-keys -t $SESSION_NAME:0.1 'nvim' C-m  # Open TASK
+	tmux send-keys -t $SESSION_NAME:0.1 'cd $C_DIRECTORY/tasks' C-m
 
-	# Focus pane 0
+	tmux send-keys -t $SESSION_NAME:0.1 'nvim' C-m  # Open TASK
+
+	tmux split-window -v -t $SESSION_NAME:0.0
+
+	tmux send-keys -t $SESSION_NAME:0.3 'cd $C_DIRECTORY/src' C-m
+
 	tmux select-pane -t $SESSION_NAME:0.0
 
-  # Attach to the session
-  tmux attach-session -t $SESSION_NAME
+	tmux resize-pane -D 20 # Shrink CAVA pane
+
+	tmux attach-session -t $SESSION_NAME
 else
-  # If the session exists, just attach to it
-  tmux attach-session -t $SESSION_NAME
+	tmux attach-session -t $SESSION_NAME
 fi
