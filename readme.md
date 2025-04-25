@@ -85,35 +85,32 @@ cc hello_world.c -o ./compiled/hello_world
 
 The directory structure of this repository is as follows:
 
-```
+```ruby
 C-Programming-Language/
-├── assets
+├── .gitignore
+├── assets/
 ├── LICENSE
 ├── readme.md
-├── src
-│   ├── 1.0-non-book-related
-│   ├── 1.1-getting-started
-│   ├── 1.2-variables-arithmetic-expressions
-│   ├── 1.3-for-statement
-│   ├── 1.5-character-input-output
-│   ├── 1.6-arrays
-│   ├── 1.7-functions
-│   ├── 1.8-arguments-call-by-value
-│   ├── 1.9-character-arrays
-│   ├── 1.10-external-variables-and-scope
-├── tasks
-│   ├── Chapter-1:Tutorial-Introduction
-│   ├── Chapter-2:Types-Operators-Expressions
-│   ├── Chapter-3:Control-Flow
-│   ├── Chapter-4:Functions-Program-Structure
-│   ├── Chapter-5:Pointers-Arrays
-│   ├── Chapter-6:Structures
-│   ├── Chapter-7:Input-Output
-│   └── Chapter-8:The-UNIX-System-Interface
+├── src/
+│   ├── chapter-1:tutorial-introduction/
+│   ├── chapter-2:types-operators-expressions/
+│   ├── chapter-3:control-flow/
+│   ├── chapter-4:functions-and-program-structure/
+│   ├── chapter-5:pointers-and-arrays/
+│   └── chapter-6:structures/
+├── tasks/
+│   ├── Chapter-1:Tutorial-Introduction/
+│   ├── Chapter-2:Types-Operators-Expressions/
+│   ├── Chapter-3:Control-Flow/
+│   ├── Chapter-4:Functions-Program-Structure/
+│   ├── Chapter-5:Pointers-Arrays/
+│   ├── Chapter-6:Structures/
+│   ├── Chapter-7:Input-Output/
+│   └── Chapter-8:The-UNIX-System-Interface/
 └── tmux.sh
 ```
 
-> Note: Each chapter includes its exercises and compiled programs.
+> Note: Each chapter includes its exercises and my solutions.
 > The "Tasks" directory contains Markdown files with descriptions for the exercises.
 
 ---
