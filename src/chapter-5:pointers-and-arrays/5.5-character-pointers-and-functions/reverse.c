@@ -1,14 +1,16 @@
-void reverse(char *string) {
-  char *end = string;
+void reverse(char* string)
+{
+    char* end = string;
 
-  while (*end)
-    end++;
+    while (*end)
+        end++;
 
-  --end;
+    --end;
 
-  while (end > string) {
-    char temp = *string;
-    *string++ = *end;
-    *end-- = temp;
-  }
+    while (end > string)
+    {
+        char temp = *string;
+        *string++ = *end;
+        *end-- = temp;
+    }
 }

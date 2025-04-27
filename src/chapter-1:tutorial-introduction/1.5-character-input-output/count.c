@@ -1,24 +1,27 @@
 #include <stdio.h>
 
-int main() {
-  int nl, bl, tab = 0;
-  int c;
+int main()
+{
+    int nl, bl, tab = 0;
+    int c;
 
-  while ((c = getchar()) != EOF) {
-    switch (c) {
-    case '\n':
-      ++nl;
-      break;
-    case ' ':
-      ++bl;
-      break;
-    case '\t':
-      ++tab;
-      break;
+    while ((c = getchar()) != EOF)
+    {
+        switch (c)
+        {
+            case '\n':
+                ++nl;
+                break;
+            case ' ':
+                ++bl;
+                break;
+            case '\t':
+                ++tab;
+                break;
+        }
     }
-  }
 
-  printf("Blank: %d\nTabs: %d\nNewlines: %d", bl, tab, nl);
+    printf("Blank: %d\nTabs: %d\nNewlines: %d", bl, tab, nl);
 
-  return 0;
+    return 0;
 }

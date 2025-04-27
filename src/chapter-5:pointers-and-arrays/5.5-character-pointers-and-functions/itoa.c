@@ -1,28 +1,32 @@
-#include "reverse.c"
 #include <stdio.h>
 #include <stdlib.h>
 
-void itoa(int n, char *s) {
-  char *start = s;
+#include "reverse.c"
 
-  unsigned int num = (n < 0) ? -n : n; // Convert to unsigned to handle INT_MIN
+void itoa(int n, char* s)
+{
+    char* start = s;
 
-  do {
-    *s++ = num % 10 + '0';
-  } while ((num /= 10) > 0);
+    unsigned int num = (n < 0) ? -n : n; // Convert to unsigned to handle INT_MIN
 
-  if (n < 0)
-    *s++ = '-';
+    do
+    {
+        *s++ = num % 10 + '0';
+    } while ((num /= 10) > 0);
 
-  *s = '\0';
+    if (n < 0)
+        *s++ = '-';
 
-  reverse(start);
+    *s = '\0';
+
+    reverse(start);
 }
 
-int main(void) {
-  int x = 145;
-  char string[1000];
-  itoa(x, string);
-  printf("%s", string);
-  return EXIT_SUCCESS;
+int main(void)
+{
+    int x = 145;
+    char string[1000];
+    itoa(x, string);
+    printf("%s", string);
+    return EXIT_SUCCESS;
 }

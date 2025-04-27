@@ -1,15 +1,18 @@
 #include <stdio.h>
 
-int main() {
-  int c, nl;
+int main()
+{
+    int c, nl;
 
-  nl = 0;
-  while ((c = getchar()) != EOF) {
-    if (c == '\n') {
-      ++nl;
+    nl = 0;
+    while ((c = getchar()) != EOF)
+    {
+        if (c == '\n')
+        {
+            ++nl;
+        }
     }
-  }
 
-  printf("%d", nl);
-  return 0;
+    printf("%d", nl);
+    return 0;
 }
