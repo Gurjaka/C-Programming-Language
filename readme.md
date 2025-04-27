@@ -88,6 +88,7 @@ The directory structure of this repository is as follows:
 ```ruby
 C-Programming-Language/
 ├── .gitignore
+├── .clang-format
 ├── assets/
 ├── LICENSE
 ├── readme.md
@@ -107,6 +108,7 @@ C-Programming-Language/
 │   ├── Chapter-6:Structures/
 │   ├── Chapter-7:Input-Output/
 │   └── Chapter-8:The-UNIX-System-Interface/
+├── update_returns.sh # Ensures stdlib.h inclusion, fixes main return values, and formats code
 └── tmux.sh
 ```
 
