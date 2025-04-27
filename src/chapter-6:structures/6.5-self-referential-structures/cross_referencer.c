@@ -71,7 +71,7 @@ int main(int argc, char* argv[])
                 // handle incorrect arguments
                 default: {
                     fprintf(stderr, "Unknown option: %s\n", argv[i]);
-                    return 1;
+                    return EXIT_FAILURE;
                 }
             }
         }
@@ -85,7 +85,7 @@ int main(int argc, char* argv[])
     if (fileptr == NULL)
     {
         fprintf(stderr, "Error: couldn't open file.\n");
-        return 1;
+        return EXIT_FAILURE;
     }
 
     char word[MAXWORD];
@@ -136,7 +136,7 @@ int main(int argc, char* argv[])
             free_tree(groups[i].root);
         }
     }
-    return 0;
+    return EXIT_SUCCESS;
 }
 
 // getword: reads words from passed file

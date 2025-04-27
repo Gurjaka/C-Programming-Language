@@ -78,7 +78,7 @@ int main(int argc, char* argv[])
     if (fileptr == NULL)
     {
         fprintf(stderr, "Error: couldn't open file.\n");
-        return 1;
+        return EXIT_FAILURE;
     }
 
     struct tree* root;
@@ -130,7 +130,7 @@ int main(int argc, char* argv[])
             free_tree(groups[i].root);
         }
     }
-    return 0;
+    return EXIT_SUCCESS;
 }
 
 // getword: reads words from passed file

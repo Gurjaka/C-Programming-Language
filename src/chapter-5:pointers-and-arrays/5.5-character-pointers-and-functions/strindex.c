@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 /* strindex: return index of t in s, -1 if none */
 int strindex(char* s, char* t)
@@ -25,5 +26,5 @@ int main(void)
     char x[] = "hello";
     char y[] = "ell";
     printf("%d", strindex(x, y));
-    return 0;
+    return EXIT_SUCCESS;
 }

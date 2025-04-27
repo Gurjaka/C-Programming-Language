@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 #define MAX_WORD_LENGTH 100
 
 int main()
@@ -40,5 +41,5 @@ int main()
         }
     }
 
-    return 0;
+    return EXIT_SUCCESS;
 }

@@ -1,5 +1,6 @@
 #include <ctype.h>
 #include <stdio.h>
+#include <stdlib.h>
 #define MAXWORD 100
 
 static char buf = 0;
@@ -14,7 +15,7 @@ int main(void)
     char word[MAXWORD];
     while (getword(word, MAXWORD) != EOF)
         ;
-    return 0;
+    return EXIT_SUCCESS;
 }
 
 /* getch: returns the next character, using a buffer

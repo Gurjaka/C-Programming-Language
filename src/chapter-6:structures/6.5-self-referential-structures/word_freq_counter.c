@@ -45,7 +45,7 @@ int main(void)
     free_tree(root);
     free(nodes);
 
-    return 0;
+    return EXIT_SUCCESS;
 }
 
 /* getword: get next word or character from input */

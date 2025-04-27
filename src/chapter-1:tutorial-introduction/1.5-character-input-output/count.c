@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int main()
 {
@@ -23,5 +24,5 @@ int main()
 
     printf("Blank: %d\nTabs: %d\nNewlines: %d", bl, tab, nl);
 
-    return 0;
+    return EXIT_SUCCESS;
 }

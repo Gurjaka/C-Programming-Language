@@ -22,12 +22,12 @@ int main(int argc, char* argv[])
         {
             free(linePointers[i]);
         }
-        return 0;
+        return EXIT_SUCCESS;
     }
     else
     {
         printf("error: input too big to sort\n");
-        return 1;
+        return EXIT_FAILURE;
     }
 }
 

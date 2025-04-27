@@ -1,5 +1,6 @@
 #include <ctype.h>
 #include <stdio.h>
+#include <stdlib.h>
 
 #define NUMBER '0'
 #define VARIABLE '1'

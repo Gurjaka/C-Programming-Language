@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 #define IN 1
 #define OUT 0
 
@@ -27,5 +28,5 @@ int main()
         putchar(c);
     }
     printf("%d %d %d\n", nl, nw, nc);
-    return 0;
+    return EXIT_SUCCESS;
 }

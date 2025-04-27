@@ -1,5 +1,6 @@
 #include <ctype.h>
 #include <math.h>
+#include <stdlib.h>
 
 // atof: convert stirng s to double
 double atof(char s[])

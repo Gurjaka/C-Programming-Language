@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 int main()
 {
     float cels, fahr;
@@ -9,5 +10,5 @@ int main()
         printf("%7.0f\t%4.1f\n", cels, fahr);
     }
 
-    return 0;
+    return EXIT_SUCCESS;
 }

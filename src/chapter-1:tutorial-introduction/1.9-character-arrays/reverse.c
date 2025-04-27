@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 #define MAXLINE 1000 /* maximum input line length */
 
 int lineget(char line[], int maxline);
@@ -14,7 +15,7 @@ int main(void)
         reverse(line);
         printf("%s\n", line);
     }
-    return 0;
+    return EXIT_SUCCESS;
 }
 
 /* lineget: read a line into s, return length */

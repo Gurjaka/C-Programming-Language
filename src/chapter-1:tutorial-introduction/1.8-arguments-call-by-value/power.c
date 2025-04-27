@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 /* power: raise base to n-th power; n >= 0; version 2 */
 int power(int base, int n)
 {
@@ -12,4 +13,5 @@ int power(int base, int n)
 int main()
 {
     printf("%d", power(3, 4));
+    return EXIT_SUCCESS;
 }

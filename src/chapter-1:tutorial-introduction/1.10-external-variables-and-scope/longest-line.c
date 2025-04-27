@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 #define MAXLINE 1000 /* maximum input line size */
 
 int max;               /* maximum length seen so far */
@@ -24,7 +25,7 @@ int main(void)
         }
     if (max > 0)
         printf("%s", longest);
-    return 0;
+    return EXIT_SUCCESS;
 }
 
 /* lineget: spcialized version */

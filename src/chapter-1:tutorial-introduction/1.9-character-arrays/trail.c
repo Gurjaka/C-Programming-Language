@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 #define MAXLINE 1000 /* maximum input line lenght */
 
 int lineget(char line[], int maxline);
@@ -12,7 +13,7 @@ int main(void)
     while (lineget(line, MAXLINE) > 0)
         if (rem_blank(line) > 0)
             printf("%s\n", line);
-    return 0;
+    return EXIT_SUCCESS;
 }
 
 /* lineget: read a line into s, return length */

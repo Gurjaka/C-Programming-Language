@@ -25,7 +25,7 @@ int main(int argc, char* argv[])
     if (argc < 2)
     {
         printf("Usage: %s [RPN expression]\n", argv[0]);
-        return 1;
+        return EXIT_FAILURE;
     }
 
     int type;
@@ -117,7 +117,7 @@ int main(int argc, char* argv[])
         printf("\tResult: %.8g\n", pop());
     }
 
-    return 0;
+    return EXIT_SUCCESS;
 }
 
 void push(double f)

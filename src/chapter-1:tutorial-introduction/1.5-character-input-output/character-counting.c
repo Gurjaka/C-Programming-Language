@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int main()
 {
@@ -6,4 +7,5 @@ int main()
     for (nc = 0; getchar() != EOF; ++nc)
         ;
     printf("%.0f\n", nc);
+    return EXIT_SUCCESS;
 }

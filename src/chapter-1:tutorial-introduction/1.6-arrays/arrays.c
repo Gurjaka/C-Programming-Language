@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int main()
 {
@@ -26,5 +27,5 @@ int main()
 
     printf(", white space = %d, other = %d \n", nwhite, nother);
 
-    return 0;
+    return EXIT_SUCCESS;
 }

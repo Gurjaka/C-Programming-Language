@@ -79,13 +79,13 @@ int main(int argc, char* argv[])
                     else
                     {
                         printf("Error: -k requires field specification\n");
-                        return 1;
+                        return EXIT_FAILURE;
                     }
                     break;
                 }
                 default:
                     printf("Unknown option: %s\n", argv[i]);
-                    return 1;
+                    return EXIT_FAILURE;
             }
         }
     }
@@ -115,12 +115,12 @@ int main(int argc, char* argv[])
         {
             free(lineptr[i]);
         }
-        return 0;
+        return EXIT_SUCCESS;
     }
     else
     {
         printf("input too big to sort\n");
-        return 1;
+        return EXIT_FAILURE;
     }
 }
 

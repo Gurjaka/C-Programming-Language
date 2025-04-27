@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 // printd: print n in decimal
 void printd(int n)

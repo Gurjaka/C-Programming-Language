@@ -23,14 +23,14 @@ int main(void)
     if (test == NULL)
     {
         printf("Installation failed!\n");
-        return 1;
+        return EXIT_FAILURE;
     }
 
     test = lookup("example");
     if (test == NULL)
     {
         printf("\nCouldn't find definition of name\n");
-        return 1;
+        return EXIT_FAILURE;
     }
 
     printf("Name: %s\nTest: %s\n", test->name, test->defn);
@@ -41,12 +41,12 @@ int main(void)
     if (test == NULL)
     {
         printf("\nremoved definition of name\n");
-        return 0;
+        return EXIT_SUCCESS;
     }
 
     // This point will not be reached if the name was removed successfully
     printf("Name: %s\nTest: %s\n", test->name, test->defn);
-    return 0;
+    return EXIT_SUCCESS;
 }
 
 // hash:  form hash value for string s

@@ -24,7 +24,7 @@ int main(int argc, char* argv[])
         printf("%s\n", line);
     }
 
-    return 0;
+    return EXIT_SUCCESS;
 }
 
 int lineget(void)

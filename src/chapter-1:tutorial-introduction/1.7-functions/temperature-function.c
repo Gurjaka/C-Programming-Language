@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 float cels_to_fahr(float cels)
 {
@@ -14,5 +15,5 @@ int main()
         printf("%7.0f\t%4.1f\n", cels, cels_to_fahr(cels));
     }
 
-    return 0;
+    return EXIT_SUCCESS;
 }

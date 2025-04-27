@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 #define MAXLINE 1000
 
 int tabstop;
@@ -17,7 +18,7 @@ int main(void)
         printf("%s\n", line);
     }
 
-    return 0;
+    return EXIT_SUCCESS;
 }
 
 int lineget(void)
